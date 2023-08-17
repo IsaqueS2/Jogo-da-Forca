@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="img/forca.ico" type="image/x-icon">
+
+  <!-- fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Castoro+Titling&display=swap" rel="stylesheet">
+
+  <title>Jogo da Forca</title>
+</head>
+<body>
+  <h1>Jogo da Forca</h1>
+  
+  <div id="container">
+     <div id="imagem">
+      <div id="erros">
+        <img src="img/error0.png">
+      </div>
+    </div>
+
+    <div id="jogo">
+      <div id="exibicao-palavra"></div>
+      <div id="tentativas">Tentativas: <span id="tentativas-atuais">0</span>/5</div>
+      <div id="teclado"></div>
+    </div>
+ </div>
+   
+  <div id="final" hidden>
+    <h2 id="mensagem"></h2>
+    <p>A palavra era: <span id="palavra-final"> </span></p>
+    <button id="btnReiniciar">Reiniciar</button>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

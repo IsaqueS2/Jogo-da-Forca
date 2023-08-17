@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+  }
+  
+ 
+  
+  .titulo {
+    color: #333;
+  }
+  
+  #exibicao-palavra {
+    font-size: 25px;
+    margin: 20px 0;
+    
+  }
+  
+  #tentativas {
+    font-size: 1.2em;
+    color: #888;
+    margin-bottom: 20px;
+  }
+  
+  #teclado {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .botao {
+    padding: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .botao:hover {
+    background-color: #555;
+  }
+  
+  #fim-do-jogo {
+    font-size: 1.2em;
+    margin-top: 20px;
+   
+  }
+  
+  #botao-reiniciar {
+    margin-top: 10px;
+    padding: 8px 20px;
+    font-size: 1em;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+  }
+  
+  #botao-reiniciar:hover {
+    background-color: #666;
+  }
+  
+  
+  #erros img{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left:37%;
+    top: 26%;
+
+  }
+
+  h1{
+    margin-bottom: 5%;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Castoro Titling', cursive;
+    font-size: 25px;
+  }
+
+
+  
+
+  @media (max-width: 768px) {
+    #erros img{
+      margin: 84px 0px 0px -100px;
+    }
+
+    h1{
+      margin-bottom: 30%;
+      font-family: 'Bebas Neue', sans-serif;
+      font-family: 'Castoro Titling', cursive;
+      font-size: 20px;
+    }
+
+    #exibicao-palavra
+    {
+      margin-left: 20%;
+      font-size: 30px;
+    }
+  }
+  
